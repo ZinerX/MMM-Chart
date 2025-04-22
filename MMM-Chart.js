@@ -49,7 +49,10 @@ Module.register("MMM-Chart", {
     },
 
     getScripts () {
-        return [`modules/${this.name}/node_modules/chart.js/dist/chart.umd.js`];
+        return [
+            `modules/${this.name}/node_modules/chart.js/dist/chart.umd.js`,
+            `modules/${this.name}/node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.js`
+        ];
     },
 
     start () {
